@@ -1,5 +1,5 @@
 # Advanced Hydrologic Analysis - HW1
-本儲存庫包含高等水文分析第一週作業之 Python 實作程式碼。
+本儲存庫包含高等水文分析第一次作業之Python程式碼
 ## 作業內容
 * Q1: 資料提取與探索性分析 (Data Extraction & Exploratory Analysis)
 * Q2: 機率分佈擬合 (Probability Distribution Fitting)
