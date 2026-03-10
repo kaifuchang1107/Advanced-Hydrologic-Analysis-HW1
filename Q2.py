@@ -56,11 +56,11 @@ plt.show()
 
 #Q2比較圖
 
-# # --- 繪圖部分：MoM 與 MLE 對照圖 ---
+# MoM與MLE對照圖
 # fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
 # x_axis = np.linspace(data.min()-0.5, data.max()+0.5, 200)
 
-# # 1. 左圖：MoM 擬合結果
+# 1. 左圖：MoM
 # ax1.hist(data, bins=k_sturges, density=True, color='skyblue', edgecolor='black', alpha=0.7, label='Observations')
 # ax1.plot(x_axis, norm.pdf(x_axis, mu_n_mom, sigma_n_mom), 'r-', lw=2, label='Normal (MoM)')
 # ax1.plot(x_axis, lognorm.pdf(x_axis, s=sigma_y_mom, scale=np.exp(mu_y_mom)), 'b--', lw=2, label='Lognormal (MoM)')
@@ -70,7 +70,7 @@ plt.show()
 # ax1.legend()
 # ax1.grid(axis='y', alpha=0.3)
 
-# # 2. 右圖：MLE 擬合結果
+# # 2. 右圖
 # ax2.hist(data, bins=k_sturges, density=True, color='skyblue', edgecolor='black', alpha=0.7, label='Observations')
 # ax2.plot(x_axis, norm.pdf(x_axis, mu_n_mle, sigma_n_mle), 'r-', lw=2, label='Normal (MLE)')
 # ax2.plot(x_axis, lognorm.pdf(x_axis, s=sigma_y_mle, scale=np.exp(mu_y_mle)), 'b--', lw=2, label='Lognormal (MLE)')
@@ -79,7 +79,6 @@ plt.show()
 # ax2.set_ylabel('Probability Density')
 # ax2.legend()
 # ax2.grid(axis='y', alpha=0.3)
-
 # plt.tight_layout()
 # plt.savefig('II.Probability_Distribution_Comparison.png')
 # plt.show()
